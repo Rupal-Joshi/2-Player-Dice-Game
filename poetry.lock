@@ -1,0 +1,17 @@
+[[package]]
+name = "details"
+version = "0.2.0"
+description = "Tools for processing AWS detailed billing reports"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "1d962e54de6cdb45e365dfde82fc35d29e4fa9e7e5fb0657a278ef80e00630be"
+
+[metadata.files]
+details = [
+    {file = "details-0.2.0.tar.gz", hash = "sha256:c767226f01c65a752e5bf750200f6101fff7b25a128d686b6af58f694d7a7aa4"},
+]

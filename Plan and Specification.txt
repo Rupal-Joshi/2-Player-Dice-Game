@@ -1,0 +1,71 @@
+Design, develop, test and evaluate a program that:
+
+
+●Allows two players to enter their details, which are then authenticated to ensure that they are authorised players.
+
+1. details*2- input: username, password
+2. authenticated- keep details in 1 file
+
+Approach 1
+-> Get player 1 details 
+-> Get player 2 details
+-> Ask Player 1 if they have an account 
+  -> if they do, then check username and password against the details.csv
+  -> if they don't, ask them if they would like to register or "login"
+  -> repeat until they have a *valid* login 
+-> Ask Player 2 if they have an account 
+  -> if they do, then check username and password against the details.csv
+  -> if they don't, ask them if they would like to register or "login"  
+
+Approach 2
+-> Get player 1 details
+#valid= true, valid=false
+-> Ask Player 1 if they have an account 
+  -> if they do, then check username and password against the details.csv
+  -> if they don't, ask them if they would like to register or "login"
+  -> repeat until they have a *valid* login
+-> Get player 2 details
+-> Ask Player 2 if they have an account 
+  -> if they do, then check username and password against the details.csv
+  -> if they don't, ask them if they would like to register or "login" 
+
+Approach 2 may be easier, as the whole process of get player details, then check them can be repeated more easily. 
+
+To get details: 
+save an input to a variable, we need username and password
+e.g.
+username = input(f"Please enter your username, player {player_num}: ")
+
+To ask if they have an account:
+save an input to a variable, we need a yes or a no
+use an if statement to see if they said y or n
+e.g.
+if account == "y":
+
+To check if the details are in an account, we need to read the details.csv file, and then compare the contents. This is similar to the 06.02 Specified Character task. Use this to help you!
+
+If the details match, then it's fine, we can move on. If they don't match we need to ask them again, which is why I suggested Approach 2 as wecould pop the whole detail entry/checking process in a loop. 
+
+To add an entry to the csv, have a look at any of your Repls where you had to write an entry to the csv, this is 09 Files from around 05 to 10 there are a range of tasks! :) 
+
+
+
+
+●Allows each player to roll two 6-sided dice. #Lewis - "Roll dice" Def fuction.
+
+●Calculates and outputs the points for each round and each player’s total score.
+
+1. loop to print output and add up points
+
+●Allows the players to play 5 rounds.
+
+1. for i in range (5)
+
+●If both players have the same score after 5 rounds, allows each player to roll 1 die each until someone wins.
+Outputs who has won at the end of the 5 rounds.
+
+●Stores the winner’s score, and their name, in an external file.
+
+●Displays the score and player name of the top 5 winning scores from the external file.
+
+
